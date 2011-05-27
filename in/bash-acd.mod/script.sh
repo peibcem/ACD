@@ -10,8 +10,8 @@
 #       OPTIONS:  ---
 #  REQUIREMENTS:  ---
 #          BUGS:  ---
-#         NOTES:  ---
-#        AUTHOR: YOUR NAME (), 
+#         NOTES: Module for ACD
+#        AUTHOR: Luis S G (qwertyx), qwertylinuxdeb@gmail.com
 #       COMPANY: 
 #       CREATED: 09/05/11 18:04:02 CEST
 #      REVISION:  ---

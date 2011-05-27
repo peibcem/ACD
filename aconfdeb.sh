@@ -2,17 +2,17 @@
 #===============================================================================
 #
 #          FILE:  aconfdeb.sh
-# 
+#
 #         USAGE:  ./aconfdeb.sh 
-# 
+#
 #   DESCRIPTION:  Main script of ACD.
-# 
+#
 #       OPTIONS:  ---
 #  REQUIREMENTS:  ---
 #          BUGS:  ---
 #         NOTES:  ---
-#        AUTHOR: YOUR NAME (), 
-#       COMPANY: 
+#        AUTHOR: Luis S G (qwertyx), qwertylinuxdeb@gmail.com
+#       COMPANY: No company.
 #       CREATED: 05/05/11 20:04:27 CEST
 #      REVISION:  ---
 #===============================================================================

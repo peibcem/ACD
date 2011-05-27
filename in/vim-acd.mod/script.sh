@@ -1,4 +1,21 @@
 #!/bin/bash
+#===============================================================================
+#
+#          FILE:  puta.sh
+# 
+#         USAGE:  ./puta.sh 
+# 
+#   DESCRIPTION:  Script to configure vim
+# 
+#       OPTIONS:  ---
+#  REQUIREMENTS:  ---
+#          BUGS:  ---
+#         NOTES: Module for ACD
+#        AUTHOR: Luis S G (qwertyx), qwertylinuxdeb@gmail.com
+#       COMPANY: No Company
+#       CREATED: 28/05/11 00:41:33 CEST
+#      REVISION:  ---
+#===============================================================================
 #
 # Script para configurar lo mas posible vim para el usuario.
 # Actualmente los plugins están ya descargados y dentro de box/
