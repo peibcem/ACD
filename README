@@ -1,0 +1,10 @@
+Este script esta pensado para hacer determinadas tareas "rudimentarias" a la hora
+de instalar un nuevo sistema Debian GNU/Linux en una máquina.
+Estas tareas entre otras cosas tienen el propósito de mejorar el aspecto del 
+sistema o la seguridad del mismo.
+No solo es sistema principal es afectado, también programas "externos"
+(ej. vim, bash, firefox4)
+
+- There is a README file inside of each module directory. It's describe some specifications
+  of each module, such as extra software used by them, main task...etc ( (out|in)/*.mod-acd/README )
+

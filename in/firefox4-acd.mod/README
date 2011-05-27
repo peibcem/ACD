@@ -1,0 +1,8 @@
+Firefox is a product of Mozilla.
+This script try to download the lastes version of Firefox 4 from:
+http://releases.mozilla.org/pub/mozilla.org/firefox/releases/latest/linux-$ARCH/es-ES/
+Where $ARCH is your machine architecture.
+It's prepared for Spain.
+Also a symbolic link in /usr/local/bin is created (named "firefox4")
+It's recommended to create a new profile for Firefox4 (You can do it running "firefox4 -P", 
+then you can run simply "firefox4".

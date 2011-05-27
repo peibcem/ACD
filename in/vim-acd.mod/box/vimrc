@@ -1,0 +1,80 @@
+" Part of this file has been taken from:
+" http://vim-latex.sourceforge.net/documentation/latex-suite.html
+
+" Resaltar cadenas de búsqueda
+set hlsearch
+
+" No ser sensible a mayúsculas excepto si se usan en la cadena de búsqueda mayúsculas
+set ignorecase smartcase
+
+" Cuando se empiece comentario se añade carácter de comentario
+set fo=croq
+
+" Muestra numero de linea  la izquierda
+set nu
+
+" Guardar automáticamente antes de comandos como :make o :next
+set autowrite
+
+" autoindent
+set ai
+
+" Press <F6> for cancel highlighting of searched words
+map <F6> :nohlsearch <CR>
+
+" Usar los comandos CTRL-], :tag, vim -t estos usaran cstag (Csope)
+" Se usara la base de datos de cscope en vez de la de ctags
+" Cosultar ayuda vim (  :help cs  )
+set cst
+
+" Muestra información cunado se usa :cspope (OK?)
+set cscopeverbose
+
+" Guarda antes de buscar cualquier cosa..mensaje molesto "E37:..."
+map <C-\> :w <CR> <C-]>
+
+" http://vim-latex.sourceforge.net/documentation/latex-suite.html
+" REQUIRED. This makes vim invoke Latex-Suite when you open a tex file.
+filetype plugin on
+
+" IMPORTANT: grep will sometimes skip displaying the file name if you
+" search in a singe file. This will confuse Latex-Suite. Set your grep
+" program to always generate a file-name.
+set grepprg=grep\ -nH\ $*
+
+" OPTIONAL: This enables automatic indentation as you type.
+filetype indent on
+
+" OPTIONAL: Starting with Vim 7, the filetype of empty .tex files defaults to
+" 'plaintex' instead of 'tex', which results in vim-latex not being loaded.
+" The following changes the default filetype back to 'tex':
+let g:tex_flavor='latex'
+
+let g:Tex_ViewRule_pdf='evince'
+let g:Tex_DefaultTargetFormat='pdf'
+
+
+" Compilar ficheros LaTeX sin guardar previamente.
+map <f2> :w<cr><leader>ll<leader>lv
+
+autocmd FileType c set omnifunc=ccomplete#Complete
+autocmd FileType css set omnifunc=csscomplete#CompleteCSS
+autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
+autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType php set omnifunc=phpcomplete#CompletePHP
+autocmd FileType python set omnifunc=pythoncomplete#Complete
+autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
+
+" For gvim...set a max of 40 lines and 130 columns
+au GUIEnter * set lines=40 columns=130
+
+" Afecte a sentencias SQL (dentro de php)
+autocmd FileType php let php_sql_query=1
+
+autocmd FileType php let php_htmlInStrings=1
+autocmd FileType php let php_noShortTags=0
+
+" Spell
+set spell
+set spelllang=en,es
+

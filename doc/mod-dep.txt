@@ -1,0 +1,7 @@
+Este fichero contiene una lista de módulos que necesitan ser instalados antes
+de instalar en módulo en el que esta el fichero.
+Se ruega ordenar las entradas alfabéticamente. Con el comando :sort en vim es
+realmente fácil.
+En caso de que no necesite ningún paquete para instalar, dejar el fichero
+en blanco, 0 bytes.
+

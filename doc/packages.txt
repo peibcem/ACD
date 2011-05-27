@@ -1,0 +1,7 @@
+Este fichero contiene una lista de los paquetes que son necesarios para el
+módulo donde se encuentra el fichero.
+Se ruega ordenar las entradas alfabéticamente. Con el comando :sort en vim es
+realmente fácil.
+En caso de que no necesite ningún paquete para instalar, dejar el fichero
+en blanco, 0 bytes.
+

@@ -1,0 +1,15 @@
+This module install following useful and powerful vim-plugins :)
+They are stored inside box/ directory.
+
+debPlugin		-> http://www.vim.org/scripts/script.php?script_id=1970
+nerd-commenter		-> http://www.vim.org/scripts/script.php?script_id=1218
+surround		-> http://www.vim.org/scripts/script.php?script_id=1697
+latex-suite		-> http://www.vim.org/scripts/script.php?script_id=475
+			-> http://vim-latex.sf.net/ 
+word_complete		-> http://www.vim.org/scripts/script.php?script_id=73
+php_check_syntax	-> http://www.vim.org/scripts/script.php?script_id=1272
+bash-support		-> http://www.vim.org/scripts/script.php?script_id=365
+
+Some of them installed via "vim-addons" (Debian package)
+
+Also copy a modified .vimrc configuration file. 

@@ -1,0 +1,20 @@
+El script esta compuesto de una serie de módulos, cada módulo realiza una tarea 
+determinada. También existe un script principal que se encarga principalmente de
+ir ejecutando cada módulo.
+
+aconfdeb.sh	->	Script principal que se encarga de instalar una lista de paquetes
+			general y de llamar a los módulos dentro de in/.
+in/		->	Directorio que contiene todos los módulos que se van a instalar cuando
+			se ejecute aconfdeb.sh
+out/		->	Directorio que contiene todos los módulos que _no_ se van a instalar cuando
+			se ejecute aconfdeb.sh
+-	-	-	-	-	-	-
+
+in/	->
+	packages.list	    -> Lista de paquetes general.
+	example-acd.mod/    -> Directorio del modulo. (Ha de acabar en "-acd.mod")
+		box/		-> Directorio que contiene los archivos extra que un módulo pueda requerir.
+				   (Imágenes, archivos de configuración..etc)
+		mod-dep  	-> See doc/mod-dep.txt
+		packages	-> See doc/packages.txt
+		script.sh	-> Script del modulo. (principal)
