@@ -20,5 +20,7 @@ if [ "$PS1" ]; then
 fi
 
 export PATH
-. /etc/proalias
+if [ -e /etc/proalias ]; then
+	. /etc/proalias
+fi
 umask 022
