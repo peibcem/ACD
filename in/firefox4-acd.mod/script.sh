@@ -22,7 +22,7 @@ ARCH="`uname -m`"
 # Need to be logged as superuser
 if [ `id -u` -ne 0 ]; then
 	echo "firefox-acd module needs to be run as root"
-	exit
+	exit 1
 fi
 
 echo "Detected architecture is $ARCH"
@@ -39,6 +39,7 @@ if [ -e /usr/local/lib/firefox/firefox ]; then
 	ln -s /usr/local/lib/firefox/firefox /usr/local/bin/firefox4
 else
 	echo "Error: Firefox4 hasn't been downloaded properly"
+	exit 2
 fi
 
 # Clean
