@@ -3,7 +3,7 @@
 #
 #          FILE:  script.sh
 # 
-#         USAGE:  ./script.sh Insert your dick. keep it in.
+#         USAGE:  ./script.sh
 # 
 #   DESCRIPTION:  Install Flash player 10.3 for 32 and 64 bits
 # 
@@ -11,7 +11,7 @@
 #  REQUIREMENTS:  Architecture 32 or 64 bits
 #          BUGS:  ---
 #         NOTES:  ---
-#        AUTHOR: José Juan Ibáñez Cemborain, 
+#        AUTHOR: José Juan Ibáñez Cemborain,(peibcem@gmail.com) 
 #       COMPANY: 
 #       CREATED: 06/01/10 14:21:24 CET
 #      REVISION:  ---
@@ -41,7 +41,6 @@ if [ "$ARCH" == i686 ]; then
 	NO_VERSION=1
 fi
 
-# Un cambio por tocar los óvalos.
 
 if [ "$ARCH" == x86_64 ]; then
 	echo "Downloading Flash Player to /tmp for 64 bits"
