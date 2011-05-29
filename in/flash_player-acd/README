@@ -1,9 +1,0 @@
-Este modulo realiza una instalación automática del plugin adobe flash player, en arquitecturas de 32 y 64 bits ($ARCH).
-Todos los ficheros necesarios para completar la instalación se descargarán automáticamente; dichos ficheros son propiedad de adobe localizables en:
-http://fpdownload.macromedia.com/get/flashplayer/current/install_flash_player_10_linux.tar.gz
-http://download.macromedia.com/pub/labs/flashplayer10/flashplayer10_2_p3_64bit_linux_111710.tar.gz
-Para ello creara una carpeta temporal, que luego eliminará, en el directorio /tmp.
-El script de este modulo creara una carpeta temporal (Flashplayer.$DIR_ID_SUFIX) en el directorio /tmp, que mas tarde eliminará.
-La instalación requiere permisos del administrador como root ($USERID)
-
-
