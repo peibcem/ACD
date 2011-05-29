@@ -1,9 +1,9 @@
 #!/bin/bash
 #===============================================================================
 #
-#          FILE:  puta.sh
+#          FILE:  script.sh
 # 
-#         USAGE:  ./puta.sh 
+#         USAGE:  ./script.sh 
 # 
 #   DESCRIPTION:  Script to configure vim
 # 
