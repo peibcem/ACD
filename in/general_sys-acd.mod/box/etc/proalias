@@ -1,0 +1,26 @@
+# /etc/proalias  Para mantener los alias separados del path y demás   
+# Lo llamo también desde profile, para que estén en sitio único.
+
+ export LS_OPTIONS='--color=auto'
+ eval `dircolors`
+ alias ls='ls $LS_OPTIONS -h'
+ alias l='ls $LS_OPTIONS -l'
+ # por tiempo de creación , la del less es para pasar colores:
+ alias ñ='ls $LS_OPTIONS -tA | less -R'
+ # por tamaño:
+ alias g='ls $LS_OPTIONS -A -S | less'
+ 
+ alias 'cd..'='cd ..'
+
+#
+# Some more alias to avoid making mistakes:
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
+
+#
+# Para color a las salidas de algunos comandos
+
+alias grep='grep --color' 
+
+alias cd_linux-source='cd /usr/src/linux-source-`uname -r`'
