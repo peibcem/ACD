@@ -20,6 +20,11 @@
 I="`dirname $0`"
 TIME_ID_BACKUP="`date +%d_%m_%Y_%k_%M_%N`"
 
+if [ `id -u` -ne 0 ]; then
+	echo "This script ($0) needs to be run as root."
+	exit 1
+fi
+
 files_tosetup=(	"/etc/default/rcS"
 		"/etc/profile"
 		"/etc/inittab"
