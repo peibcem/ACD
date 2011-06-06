@@ -28,8 +28,8 @@ fi
 echo "I'm detecting which graphic card do you use, this probably will take a moment, be patient"
 
 ARCH="`uname -m`"
-NVIDIA=`hwinfo --short | grep "^graphics card" -A 1 | grep -i nvidia | wc -l`
-ATI=`hwinfo --short | grep "^graphics card" -A 1 | grep -i ati | wc -l`
+NVIDIA=`hwinfo --short | grep "^graphics card" -A 1 | grep -i " nvidia " | wc -l`
+ATI=`hwinfo --short | grep "^graphics card" -A 1 | grep -i " ati " | wc -l`
 FAIL="Sorry, but I don't know what graphic card do you use. Poor you."
 
 if [ $ARCH != "x86_64" ]; then
