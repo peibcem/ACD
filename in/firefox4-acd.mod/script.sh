@@ -20,7 +20,7 @@
 ARCH="`uname -m`"
 
 if [ $ARCH != "x86_64" ]; then
-	$ARCH = x86
+	$ARCH = i686
 fi
 
 # Need to be logged as superuser
