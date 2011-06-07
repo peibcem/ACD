@@ -33,7 +33,7 @@ ATI=`hwinfo --short | grep "^graphics card" -A 1 | grep -i " ati " | wc -l`
 FAIL="Sorry, but I don't know what graphic card do you use. Poor you."
 
 if [ $ARCH != "x86_64" ]; then
-	$ARCH=x86
+	$ARCH = x86
 fi
 
 while [ $ATI -eq 0 && $NVIDIA -eq 0 ]; do

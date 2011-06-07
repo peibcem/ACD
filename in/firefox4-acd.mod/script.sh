@@ -19,6 +19,10 @@
 
 ARCH="`uname -m`"
 
+if [ $ARCH != "x86_64" ]; then
+	$ARCH = x86
+fi
+
 # Need to be logged as superuser
 if [ `id -u` -ne 0 ]; then
 	echo "firefox-acd module needs to be run as root"
