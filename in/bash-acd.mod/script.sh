@@ -43,7 +43,7 @@ if [ $USER_ID -eq 0 ]; then
 	cp -v $I/box/bashrc_root $HOME/.bashrc
 	cp -v $I/box/bash_profile_root $HOME/.bash_profile
 else
-	cp -v $HOME/box/bashrc_user $HOME/.bashrc
-	cp -v $HOME/box/bash_profile_user $HOME/.bash_profile
+	cp -v $I/box/bashrc_user $HOME/.bashrc
+	cp -v $I/box/bash_profile_user $HOME/.bash_profile
 fi
 

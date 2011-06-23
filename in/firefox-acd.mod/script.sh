@@ -5,7 +5,7 @@
 # 
 #         USAGE:  ./script.sh 
 # 
-#   DESCRIPTION:  ACD module to install firefox(4)
+#   DESCRIPTION:  ACD module to install firefox(X)
 # 
 #       OPTIONS:  ---
 #  REQUIREMENTS:  ---
@@ -19,6 +19,10 @@
 
 ARCH="`uname -m`"
 
+if [ $ARCH != "x86_64" ]; then
+	$ARCH = i686
+fi
+
 # Need to be logged as superuser
 if [ `id -u` -ne 0 ]; then
 	echo "firefox-acd module needs to be run as root"
@@ -27,18 +31,18 @@ fi
 
 echo "Detected architecture is $ARCH"
 
-wget -v -r -np http://releases.mozilla.org/pub/mozilla.org/firefox/releases/latest/linux-$ARCH/es-ES/ --directory-prefix="/tmp"
-tar -xvf /tmp/releases.mozilla.org/pub/mozilla.org/firefox/releases/latest/linux-$ARCH/es-ES/firefox-*.tar.bz2 -C /usr/local/lib
-if [ -e /usr/local/bin/firefox4 ]; then
-	echo "File named firefox4 already exits, deleting..."
-	rm -rfv /usr/local/bin/firefox4
+wget -v -r -np http://releases.mozilla.org/pub/mozilla.org/firefox/releases/latest/linux-$ARCH/en-US/ --directory-prefix="/tmp"
+tar -xvf /tmp/releases.mozilla.org/pub/mozilla.org/firefox/releases/latest/linux-$ARCH/en-US/firefox-*.tar.bz2 -C /usr/local/lib
+if [ -e /usr/local/bin/firefox ]; then
+	echo "File named /usr/local/bin/firefox already exits, deleting..."
+	rm -rfv /usr/local/bin/firefox
 fi
 
 # Probably download of Firefox4 wasn't successfully
 if [ -e /usr/local/lib/firefox/firefox ]; then
-	ln -s /usr/local/lib/firefox/firefox /usr/local/bin/firefox4
+	ln -s /usr/local/lib/firefox/firefox /usr/local/bin/firefox
 else
-	echo "Error: Firefox4 hasn't been downloaded properly"
+	echo "Error: Firefox hasn't been downloaded properly"
 	exit 2
 fi
 
