@@ -64,7 +64,7 @@ echo "Detected architecture is $ARCH"
 
 if [ $ATI -eq 1 ]; then
 	echo "I'll shall to download and install the driver for ATI graphic cards"
-	wget -cv http://www2.ati.com/drivers/linux/ati-driver-installer-11-5-x86.x86_64.run --directory-prefix="/tmp/gcard"
+	wget -cv http://www2.ati.com/drivers/linux/ati-driver-installer-11-6-x86.x86_64.run --directory-prefix="/tmp/gcard"
 	chmod a+x /tmp/gcard/*
 	/tmp/gcard/*
 	aticonfig --initial
