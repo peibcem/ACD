@@ -129,7 +129,7 @@ for a in $(ls $I/in/*-acd.mod/mod-dep); do
 		if [ $? -eq 0 ]; then
 			echo "Module \"$b\" isn't present in \"in/\" directory. \"$b\" is required by \"$a\"."
 			echo "Install it before trying again run this script"
-			exit
+			exit 1
 		fi
 	done
 done
@@ -164,3 +164,4 @@ for e in $(ls -d $I/in/*-acd.mod); do
 	install_mod "`basename $e`"	# Note the basename command...
 done
 
+exit 0
