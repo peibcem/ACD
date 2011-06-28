@@ -156,7 +156,7 @@ aptitude install --visual-preview `cat $I/in/packages.list` `cat $I/in/*-acd.mod
 # These packages ($I/in/*-acd.mod/packages) are absolutely necessary to be installed, cause
 # modules need them. They have to be installed if they were not (in previous aptitude command).
 # With previous aptitude order you can install all of them in just one step. Doing it at night :)
-aptitude install `cat $I/in/-acd.mod/packages`
+aptitude install `cat $I/in/*-acd.mod/packages`
 
 # Install modules phase.
 for e in $(ls -d $I/in/*-acd.mod); do
